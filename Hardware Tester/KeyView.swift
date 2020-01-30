@@ -26,9 +26,8 @@ class KeyView: NSView {
 	}
 	@IBInspectable var keyCode: Int = -1
 
-	var modifierKey: ModifierKey? {
-		ModifierKey(rawValue: keyCode)
-	}
+	var modifierKey: ModifierKey? { ModifierKey(rawValue: keyCode) }
+	var isModifierKey: Bool { modifierKey != nil }
 
 	private(set) var clicked: Bool = false
 	var pressed: Bool = false {
@@ -39,8 +38,8 @@ class KeyView: NSView {
 	}
 	var keyColor: NSColor {
 		if pressed { return Self.pressedColor }
-		if !clicked { return Self.defaultColor }
-		return (modifierKey == nil ? Self.clickedColor1 : Self.clickedColor2)
+		if clicked { return isModifierKey ? Self.clickedColor2 : Self.clickedColor1 }
+		return Self.defaultColor
 	}
 
 	required init?(coder: NSCoder) {
@@ -57,7 +56,7 @@ class KeyView: NSView {
 
 	private func initializeView() {
 		self.wantsLayer = true
-		self.layer?.backgroundColor = NSColor.darkGray.cgColor
+		self.layer?.backgroundColor = Self.defaultColor.cgColor
 		self.layer?.cornerRadius = 5
 
 		textLabel = NSTextField()
@@ -79,8 +78,6 @@ class KeyView: NSView {
 	}
 
 	override func layout() {
-		super.layout()
-
 		let fontSizeFactor: CGFloat = (keyLabel?.count ?? 0 > 1) ? 0.25 : 0.4
 		let fontSize = max(self.frame.height * fontSizeFactor, 12)
 		textLabel.font = NSFont.systemFont(ofSize: fontSize, weight: .thin)
@@ -99,6 +96,8 @@ class KeyView: NSView {
 			textLabelHeightConstraint = textLabel.heightAnchor.constraint(equalToConstant: labelSize.height)
 			textLabelHeightConstraint?.isActive = true
 		}
+
+		super.layout()
 	}
 
 	private func updateView() {
