@@ -10,34 +10,37 @@ import Cocoa
 
 @IBDesignable
 class KeyView: NSView {
+	private static let defaultColor = NSColor.darkGray
+	private static let pressedColor = NSColor(deviceRed: 0.15, green: 0.70, blue: 0.40, alpha: 1)
+	private static let clickedColor1 = NSColor(deviceRed: 0.25, green: 0.50, blue: 0.80, alpha: 1)
+	private static let clickedColor2 = NSColor(deviceRed: 0.15, green: 0.35, blue: 0.65, alpha: 1)
+
 	private var textLabel: NSTextField!
 	private var textLabelWidthConstraint: NSLayoutConstraint?
 	private var textLabelHeightConstraint: NSLayoutConstraint?
 
-	@IBInspectable var label: String? {
+	@IBInspectable var keyLabel: String? {
 		didSet {
-			textLabel.stringValue = label ?? "?"
+			textLabel.stringValue = keyLabel ?? "?"
 		}
 	}
+	@IBInspectable var keyCode: Int = -1
 
-	@IBInspectable var value: String?
-
-	var keyValue: String? {
-		guard let value = value else { return nil }
-		if value.starts(with: "0x") {
-			guard let number = Int(value.dropFirst(2), radix: 16),
-				let scalar = Unicode.Scalar(number) else { return nil }
-			return String(scalar)
-		} else {
-			return value.lowercased()
-		}
+	var modifierKey: ModifierKey? {
+		ModifierKey(rawValue: keyCode)
 	}
 
-	var pressed: Bool = false { didSet { updateView() } }
-	var clicked: Bool = false { didSet { updateView() } }
+	private(set) var clicked: Bool = false
+	var pressed: Bool = false {
+		didSet {
+			clicked = true
+			updateView()
+		}
+	}
 	var keyColor: NSColor {
-		pressed ? NSColor(deviceRed: 0.15, green: 0.75, blue: 0.40, alpha: 1)
-			: (clicked ? NSColor(deviceRed: 0.25, green: 0.50, blue: 0.85, alpha: 1) : NSColor.darkGray)
+		if pressed { return Self.pressedColor }
+		if !clicked { return Self.defaultColor }
+		return (modifierKey == nil ? Self.clickedColor1 : Self.clickedColor2)
 	}
 
 	required init?(coder: NSCoder) {
@@ -72,33 +75,59 @@ class KeyView: NSView {
 
 	override func prepareForInterfaceBuilder() {
 		self.layer?.backgroundColor = NSColor.darkGray.cgColor
-		self.layer?.cornerRadius = 5
+		self.layer?.cornerRadius = 6
 	}
 
 	override func layout() {
 		super.layout()
 
-		let fontSizeFactor: CGFloat = (label?.count ?? 0 > 1) ? 0.25 : 0.4
-		let fontSize = max(self.frame.height * fontSizeFactor, 13)
+		let fontSizeFactor: CGFloat = (keyLabel?.count ?? 0 > 1) ? 0.25 : 0.4
+		let fontSize = max(self.frame.height * fontSizeFactor, 12)
 		textLabel.font = NSFont.systemFont(ofSize: fontSize, weight: .thin)
-		textLabel.sizeToFit()
+		let labelSize = textLabel.sizeThatFits(.zero)
 
 		if let constraint = textLabelWidthConstraint {
-			constraint.constant = textLabel.frame.width
+			constraint.constant = labelSize.width
 		} else {
-			textLabelWidthConstraint = textLabel.widthAnchor.constraint(equalToConstant: textLabel.frame.width)
+			textLabelWidthConstraint = textLabel.widthAnchor.constraint(equalToConstant: labelSize.width)
 			textLabelWidthConstraint?.isActive = true
 		}
 
 		if let constraint = textLabelHeightConstraint {
-			constraint.constant = textLabel.frame.height
+			constraint.constant = labelSize.height
 		} else {
-			textLabelHeightConstraint = textLabel.heightAnchor.constraint(equalToConstant: textLabel.frame.height)
+			textLabelHeightConstraint = textLabel.heightAnchor.constraint(equalToConstant: labelSize.height)
 			textLabelHeightConstraint?.isActive = true
 		}
 	}
 
 	private func updateView() {
 		self.layer?.backgroundColor = keyColor.cgColor
+	}
+}
+
+enum ModifierKey: Int {
+	case capsLock = 57
+	case shiftLeft = 56
+	case shiftRight = 60
+	case controlLeft = 59
+	case optionLeft = 58
+	case optionRight = 61
+	case commandLeft = 55
+	case commandRight = 54
+	case function = 63
+
+	var flag: NSEvent.ModifierFlags {
+		switch self {
+		case .capsLock: return .capsLock
+		case .shiftLeft: return .shift
+		case .shiftRight: return .shift
+		case .controlLeft: return .control
+		case .optionLeft: return .option
+		case .optionRight: return .option
+		case .commandLeft: return .command
+		case .commandRight: return .command
+		case .function: return .function
+		}
 	}
 }

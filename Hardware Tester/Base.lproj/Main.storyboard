@@ -726,8 +726,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="ke0-gT-SfF"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="esc"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0x1B"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="esc"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="53"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="saw-kW-r22" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -737,8 +739,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="oGP-jO-62K"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="F1"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0xF704"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="F1"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="122"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="seO-OP-J5o" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -748,8 +752,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="y85-Sz-got"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="F2"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0xF705"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="F2"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="120"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="2Rc-Kn-txB" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -759,8 +765,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="Jo4-63-aHX"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="F3"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0xF706"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="F3"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="99"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="p5S-2p-JaB" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -770,8 +778,10 @@
                                                             <constraint firstAttribute="width" secondItem="p5S-2p-JaB" secondAttribute="height" multiplier="1.6" id="imV-Gs-uMQ"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="F4"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0xF707"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="F4"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="118"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="g35-kg-M8p" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -781,8 +791,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="qam-Bw-Prm"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="F5"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0xF708"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="F5"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="96"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="aqb-Ae-lcW" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -792,8 +804,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="ygg-Ne-CzG"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="F6"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0xF709"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="F6"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="97"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="11i-jE-60q" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -803,8 +817,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="wGD-NN-ZgJ"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="F7"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0xF70A"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="F7"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="98"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="UcE-pS-uVW" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -814,8 +830,10 @@
                                                             <constraint firstAttribute="width" secondItem="UcE-pS-uVW" secondAttribute="height" multiplier="1.6" id="S6C-V9-QV3"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="F8"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0xF70B"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="F8"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="100"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="8cH-0W-1br" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -825,8 +843,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="RZr-A2-Wha"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="F9"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0xF70C"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="F9"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="101"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="fib-Mf-OVo" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -836,8 +856,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="YTg-g5-Iff"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="F10"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0xF70D"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="F10"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="109"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="tLf-re-iZN" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -847,8 +869,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="JgL-B2-PCc"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="F11"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0xF70E"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="F11"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="103"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="YKm-mK-cuK" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -858,8 +882,10 @@
                                                             <constraint firstAttribute="width" secondItem="YKm-mK-cuK" secondAttribute="height" multiplier="1.6" id="zen-GD-PPx"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="F12"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0xF70F"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="F12"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="111"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="eXw-XI-YRN" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -869,7 +895,7 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="ep3-Uh-xEk"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="⏏"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="⏏"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                 </subviews>
@@ -931,8 +957,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="Owd-0t-Vke"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="`"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="`"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="`"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="50"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="5Li-3p-uuE" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -942,8 +970,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="Sax-0A-Irv"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="1"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="1"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="1"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="18"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="sgp-06-ahv" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -953,8 +983,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="TCy-4b-kEW"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="2"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="2"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="2"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="19"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="1rY-EB-B3v" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -964,8 +996,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="wyI-8f-74l"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="3"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="3"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="3"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="2pE-pC-VHM" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -975,8 +1009,10 @@
                                                             <constraint firstAttribute="width" secondItem="2pE-pC-VHM" secondAttribute="height" multiplier="1:1" id="gX6-7F-Rwl"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="4"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="4"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="4"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="21"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="rua-Ny-AAP" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -986,8 +1022,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="fgL-Aq-edq"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="5"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="5"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="5"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="23"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="xiL-bd-6zm" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -997,8 +1035,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="Nu3-hM-xBD"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="6"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="6"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="6"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="22"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="4nv-pc-oqD" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1008,8 +1048,10 @@
                                                             <constraint firstAttribute="width" secondItem="4nv-pc-oqD" secondAttribute="height" multiplier="1:1" id="Gaz-Fl-JHZ"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="7"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="7"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="7"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="26"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="SZU-AL-tes" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1019,8 +1061,10 @@
                                                             <constraint firstAttribute="width" secondItem="SZU-AL-tes" secondAttribute="height" multiplier="1:1" id="CcV-bP-X7C"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="8"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="8"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="8"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="28"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="qSL-eQ-g5D" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1030,8 +1074,10 @@
                                                             <constraint firstAttribute="width" secondItem="qSL-eQ-g5D" secondAttribute="height" multiplier="1:1" id="u1Z-wU-S7d"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="9"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="9"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="9"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="69V-2y-Y4H" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1041,8 +1087,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="W6Q-vc-P9C"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="0"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="0"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="29"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="HDG-rI-ema" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1052,8 +1100,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="jJl-4d-qQQ"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="-"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="-"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="-"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="27"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="xtF-QH-aiX" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1063,8 +1113,10 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="mxX-27-05d"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="="/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="="/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="="/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="24"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="7Ya-QR-VDK" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1074,8 +1126,10 @@
                                                             <constraint firstAttribute="width" secondItem="7Ya-QR-VDK" secondAttribute="height" multiplier="1.5" id="tbj-IL-2Pp"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="⌫"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0x7F"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="⌫"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="51"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                 </subviews>
@@ -1138,11 +1192,9 @@
                                                             <constraint firstAttribute="width" secondItem="ge6-2j-hKz" secondAttribute="height" multiplier="1.5" id="THe-CJ-sTU"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="⇥"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value">
-                                                                <string key="value" base64-UTF8="YES">
-CQ
-</string>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="⇥"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="48"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
@@ -1153,8 +1205,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="nbi-Us-sH3"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="Q"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="Q"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="Q"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="4dg-KM-4MJ" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1164,8 +1218,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="vRc-I1-GGO"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="W"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="W"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="W"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="13"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="8da-9Y-0CR" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1175,8 +1231,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="8da-9Y-0CR" secondAttribute="height" multiplier="1:1" id="y2A-X1-LqV"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="E"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="E"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="E"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="usj-wl-RNb" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1186,8 +1244,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="fg1-ne-HDZ"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="R"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="R"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="R"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="zKC-8r-VB1" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1197,8 +1257,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="zKC-8r-VB1" secondAttribute="height" multiplier="1:1" id="lG1-bb-7Vf"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="T"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="T"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="T"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="17"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="oTR-HY-GHm" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1208,8 +1270,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="oTR-HY-GHm" secondAttribute="height" multiplier="1:1" id="cb6-6S-fPX"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="Y"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="Y"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="Y"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="PDY-UE-acm" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1219,8 +1283,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="hsQ-zZ-fii"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="U"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="U"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="U"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="32"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="RYf-Kr-ujb" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1230,8 +1296,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="RYf-Kr-ujb" secondAttribute="height" multiplier="1:1" id="fMt-TU-Y1d"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="I"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="I"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="I"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="34"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="RtT-cE-xGP" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1241,8 +1309,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="RtT-cE-xGP" secondAttribute="height" multiplier="1:1" id="ojP-69-rnp"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="O"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="O"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="O"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="31"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="ZE1-Uf-qCv" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1252,8 +1322,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="ccO-gS-WZp"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="P"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="P"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="P"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="35"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="BH6-FQ-e4v" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1263,8 +1335,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="BH6-FQ-e4v" secondAttribute="height" multiplier="1:1" id="RLg-QR-Ux0"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="["/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="["/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="["/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="33"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="Nnm-1L-2lw" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1274,8 +1348,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="MaS-2o-bNJ"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="]"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="]"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="]"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="Xi4-lq-z16" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1285,8 +1361,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="Xi4-lq-z16" secondAttribute="height" id="VgK-q5-wSJ"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="\"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="\"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="\"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="42"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                 </subviews>
@@ -1349,8 +1427,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="Zcy-Ss-luN"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="⇪"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="57"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="⇪"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="57"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="Ms9-ln-2X8" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1360,8 +1440,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="jj1-7j-uAa"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="A"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="A"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="A"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="0"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="U15-hc-IgJ" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1371,8 +1453,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="U15-hc-IgJ" secondAttribute="height" multiplier="1:1" id="FWP-8W-aAk"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="S"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="S"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="S"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="G1i-zQ-aY9" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1382,8 +1466,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="RBt-Ce-c1k"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="D"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="D"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="D"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="XqR-vy-l2t" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1393,8 +1479,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="XqR-vy-l2t" secondAttribute="height" multiplier="1:1" id="Jqf-43-Vof"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="F"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="F"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="F"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="dHm-Fp-Xnf" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1404,8 +1492,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="WZa-ao-Pjc"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="G"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="G"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="G"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="8fy-Zj-6of" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1415,8 +1505,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="8fy-Zj-6of" secondAttribute="height" multiplier="1:1" id="v80-ig-Pb6"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="H"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="H"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="H"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="0T2-8K-GvK" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1426,8 +1518,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="vwN-mu-WBz"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="J"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="J"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="J"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="38"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="7Zq-7R-6Q0" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1437,8 +1531,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="7Zq-7R-6Q0" secondAttribute="height" multiplier="1:1" id="jO1-wS-VwL"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="K"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="K"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="K"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="40"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="Mzv-dd-OIv" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1448,8 +1544,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="jHM-R6-X6Y"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="L"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="L"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="L"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="37"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="B6i-Qj-MuM" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1459,8 +1557,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="B6i-Qj-MuM" secondAttribute="height" multiplier="1:1" id="Swr-cN-KO8"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value=";"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value=";"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value=";"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="41"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="Q9B-BH-7vd" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1470,8 +1570,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="qOE-jv-UBf"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="'"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="'"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="'"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="39"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="D8W-LH-R3R" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1481,8 +1583,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="s6A-8s-PKm"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="⏎"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0x0D"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="⏎"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="36"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                 </subviews>
@@ -1543,8 +1647,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="3Va-fr-ora" secondAttribute="height" multiplier="2.4" id="b2Q-HR-rnf"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="⇧"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="56"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="⇧"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="56"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="kfk-Rf-7Ai" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1554,8 +1660,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="kfk-Rf-7Ai" secondAttribute="height" multiplier="1:1" id="znB-ze-wsK"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="Z"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="Z"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="Z"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="6d7-r2-9SD" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1565,8 +1673,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="WWv-2T-Lo2"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="X"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="X"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="X"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="7"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="WBM-GI-YTn" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1576,8 +1686,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="OFm-Pc-Scp"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="C"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="C"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="C"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="EOA-ge-C3v" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1587,8 +1699,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="qjz-BU-jHo"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="V"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="V"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="V"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="9"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="Sej-Dc-5EG" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1598,8 +1712,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="icZ-Xd-3xJ"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="B"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="B"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="B"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="11"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="JbU-Uc-1vu" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1609,8 +1725,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="hk8-Zq-4On"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="N"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="N"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="N"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="45"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="dC1-Cd-z0b" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1620,8 +1738,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="dC1-Cd-z0b" secondAttribute="height" multiplier="1:1" id="W4B-S1-qha"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="M"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="M"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="M"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="46"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="bZl-Wc-fta" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1631,8 +1751,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="smT-xk-9di"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value=","/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value=","/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value=","/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="43"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="zCc-vg-Urs" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1642,8 +1764,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="gJj-m3-zqr"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="."/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="."/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="."/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="47"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="6cg-sa-ghB" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1653,8 +1777,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="6cg-sa-ghB" secondAttribute="height" multiplier="1:1" id="rzN-hg-yiN"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="/"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="/"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="/"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="44"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="3Er-tP-9fg" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1664,8 +1790,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="Dkh-rA-BtN"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="⇧"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="60"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="⇧"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="60"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                 </subviews>
@@ -1723,8 +1851,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="BKa-gc-0rI" secondAttribute="height" id="og3-Hm-DQE"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="fn"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="63"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="fn"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="63"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="PQF-ft-vAh" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1734,8 +1864,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="PQF-ft-vAh" secondAttribute="height" multiplier="1:1" id="ssS-dV-Zke"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="⌃"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="59"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="⌃"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="59"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="AP4-Lc-UBp" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1745,8 +1877,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="bq8-Pa-WFM"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="⌥"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="58"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="⌥"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="58"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="mHm-Iq-TKq" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1756,8 +1890,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="mHm-Iq-TKq" secondAttribute="height" multiplier="1.4" id="Cb7-QM-k8K"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="⌘"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="55"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="⌘"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="55"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="g0V-Id-UaW" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1767,7 +1903,9 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="xXr-Mc-4ST"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value=" "/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="49"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="WOL-js-CaU" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1777,8 +1915,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="b67-5j-3Hr"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="⌘"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="54"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="⌘"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="54"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="maM-ED-dy1" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1788,8 +1928,10 @@ CQ
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="z3W-vU-G0c"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="⌥"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="61"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="⌥"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="61"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="PWO-5h-Se3" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1799,8 +1941,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="PWO-5h-Se3" secondAttribute="height" multiplier="1:1" id="nAR-JR-ngh"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="◀︎ "/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0xF702"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="◀︎ "/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="123"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                     <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="3" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t8A-c0-UJm">
@@ -1813,8 +1957,10 @@ CQ
                                                                     <constraint firstAttribute="width" secondItem="uvc-pb-eGM" secondAttribute="height" multiplier="2.1" id="KWh-g3-Yyk"/>
                                                                 </constraints>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="label" value="▲"/>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="value" value="0xF700"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="▲"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="126"/>
+                                                            </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </customView>
                                                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="9BK-2H-sIn" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
@@ -1824,8 +1970,10 @@ CQ
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="JXT-1W-r8C"/>
                                                                 </constraints>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="label" value="▼"/>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="value" value="0xF701"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value="▼"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="125"/>
+                                                            </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </customView>
                                                         </subviews>
@@ -1849,8 +1997,10 @@ CQ
                                                             <constraint firstAttribute="width" secondItem="3JJ-7J-4bj" secondAttribute="height" id="VV6-pW-DkQ"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value=" ▶︎"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="0xF703"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="keyLabel" value=" ▶︎"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="keyCode">
+                                                                <integer key="value" value="124"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
                                                 </subviews>
@@ -1941,7 +2091,7 @@ CQ
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="906.5"/>
+            <point key="canvasLocation" x="76" y="906"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Carbon
 
 class ViewController: NSViewController {
 
@@ -20,25 +21,18 @@ class ViewController: NSViewController {
 	}
 
 	private func onKeyDown(with event: NSEvent) {
-		if event.type == .flagsChanged {
-			updateKeyView(for: String(event.keyCode), event: event)
-		} else {
-			updateKeyView(for: event.charactersIgnoringModifiers, event: event)
+		allKeyViews().filter({ $0.keyCode == event.keyCode }).forEach { keyView in
+			if event.type == .flagsChanged, let flag = keyView.modifierKey?.flag {
+				keyView.pressed = event.modifierFlags.contains(flag)
+			} else {
+				keyView.pressed = (event.type == .keyDown)
+			}
 		}
 	}
 
-	private func updateKeyView(for keyValue: String?, event: NSEvent) {
-		guard let keyValue = keyValue else { return }
-		allKeyViews(rootView: view).filter({ $0.keyValue == keyValue.lowercased() }).forEach {
-			$0.clicked = true
-			$0.pressed = (event.type == .keyDown)
-		}
-		event.modifierFlags
-	}
-
-	private func allKeyViews(rootView: NSView) -> [KeyView] {
+	private func allKeyViews(rootView: NSView? = nil) -> [KeyView] {
 		var result = [KeyView]()
-		rootView.subviews.forEach { subview in
+		(rootView ?? view).subviews.forEach { subview in
 			if let keyView = subview as? KeyView {
 				result.append(keyView)
 			} else {
