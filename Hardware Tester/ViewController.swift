@@ -10,6 +10,7 @@ import Cocoa
 import Carbon
 
 class ViewController: NSViewController {
+	@IBOutlet var stackExtra: NSStackView!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -21,8 +22,14 @@ class ViewController: NSViewController {
 	}
 
 	private func onKeyDown(with event: NSEvent) {
-		allKeyViews().filter({ $0.keyCode == event.keyCode }).forEach { keyView in
-			if event.type == .flagsChanged, let flag = keyView.modifierKey?.flag {
+		var keyViews = allKeyViews().filter({ $0.keyCode == event.keyCode })
+		if keyViews.isEmpty {
+			let keyView = addKeyView(for: event)
+			keyViews.append(keyView)
+		}
+
+		keyViews.forEach { keyView in
+			if event.type == .flagsChanged, let flag = keyView.key.modifierFlag {
 				keyView.pressed = event.modifierFlags.contains(flag)
 			} else {
 				keyView.pressed = (event.type == .keyDown)
@@ -40,5 +47,23 @@ class ViewController: NSViewController {
 			}
 		}
 		return result
+	}
+
+	private func addKeyView(for event: NSEvent) -> KeyView {
+		let keyView = KeyView(frame: .zero)
+		keyView.keyLabel = Key(code: Int(event.keyCode)).name ?? event.charactersIgnoringModifiers
+		keyView.keyCode = Int(event.keyCode)
+		stackExtra.addView(keyView, in: .leading)
+		stackExtra.isHidden = false
+
+		keyView.widthAnchor.constraint(lessThanOrEqualTo: keyView.heightAnchor).isActive = true
+		if stackExtra.arrangedSubviews.count > 1 {
+			let firstKeyView = stackExtra.arrangedSubviews[0]
+			keyView.widthAnchor.constraint(equalTo: firstKeyView.widthAnchor).isActive = true
+		}
+
+		keyView.needsLayout = true
+
+		return keyView
 	}
 }

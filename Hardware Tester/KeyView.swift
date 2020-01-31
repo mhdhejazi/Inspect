@@ -26,8 +26,7 @@ class KeyView: NSView {
 	}
 	@IBInspectable var keyCode: Int = -1
 
-	var modifierKey: ModifierKey? { ModifierKey(rawValue: keyCode) }
-	var isModifierKey: Bool { modifierKey != nil }
+	var key: Key { Key(code: keyCode) }
 
 	private(set) var clicked: Bool = false
 	var pressed: Bool = false {
@@ -38,7 +37,7 @@ class KeyView: NSView {
 	}
 	var keyColor: NSColor {
 		if pressed { return Self.pressedColor }
-		if clicked { return isModifierKey ? Self.clickedColor2 : Self.clickedColor1 }
+		if clicked { return key.isModifier ? Self.clickedColor2 : Self.clickedColor1 }
 		return Self.defaultColor
 	}
 
@@ -102,31 +101,5 @@ class KeyView: NSView {
 
 	private func updateView() {
 		self.layer?.backgroundColor = keyColor.cgColor
-	}
-}
-
-enum ModifierKey: Int {
-	case capsLock = 57
-	case shiftLeft = 56
-	case shiftRight = 60
-	case controlLeft = 59
-	case optionLeft = 58
-	case optionRight = 61
-	case commandLeft = 55
-	case commandRight = 54
-	case function = 63
-
-	var flag: NSEvent.ModifierFlags {
-		switch self {
-		case .capsLock: return .capsLock
-		case .shiftLeft: return .shift
-		case .shiftRight: return .shift
-		case .controlLeft: return .control
-		case .optionLeft: return .option
-		case .optionRight: return .option
-		case .commandLeft: return .command
-		case .commandRight: return .command
-		case .function: return .function
-		}
 	}
 }

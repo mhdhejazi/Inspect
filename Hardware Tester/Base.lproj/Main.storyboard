@@ -713,7 +713,7 @@
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="719-lE-FL8">
                                 <rect key="frame" x="20" y="20" width="1000" height="386"/>
                                 <subviews>
-                                    <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="4yK-Ek-BlP">
+                                    <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4yK-Ek-BlP">
                                         <rect key="frame" x="0.0" y="0.0" width="1000" height="386"/>
                                         <subviews>
                                             <stackView distribution="fillEqually" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="0m2-tE-IR7">
@@ -2046,10 +2046,15 @@
                                                     <real value="3.4028234663852886e+38"/>
                                                 </customSpacing>
                                             </stackView>
+                                            <stackView hidden="YES" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="Vsy-xz-0iI">
+                                                <rect key="frame" x="0.0" y="326" width="1000" height="60"/>
+                                            </stackView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="c5z-b5-sMp" firstAttribute="width" secondItem="4yK-Ek-BlP" secondAttribute="width" id="3gQ-Kl-DLE"/>
                                             <constraint firstItem="rIZ-p6-OAL" firstAttribute="width" secondItem="4yK-Ek-BlP" secondAttribute="width" id="8lQ-ln-MPD"/>
+                                            <constraint firstItem="Vsy-xz-0iI" firstAttribute="width" secondItem="4yK-Ek-BlP" secondAttribute="width" id="AQQ-sT-qUa"/>
+                                            <constraint firstItem="Vsy-xz-0iI" firstAttribute="height" secondItem="bfe-rX-nz9" secondAttribute="height" id="edM-6A-15D"/>
                                             <constraint firstItem="6QE-3I-tqX" firstAttribute="width" secondItem="4yK-Ek-BlP" secondAttribute="width" id="fKc-hx-TAe"/>
                                             <constraint firstItem="0m2-tE-IR7" firstAttribute="width" secondItem="4yK-Ek-BlP" secondAttribute="width" id="gCo-xx-SN2"/>
                                             <constraint firstItem="bfe-rX-nz9" firstAttribute="width" secondItem="4yK-Ek-BlP" secondAttribute="width" id="lw7-Wv-WgQ"/>
@@ -2062,8 +2067,10 @@
                                             <integer value="1000"/>
                                             <integer value="1000"/>
                                             <integer value="1000"/>
+                                            <integer value="1000"/>
                                         </visibilityPriorities>
                                         <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
                                             <real value="3.4028234663852886e+38"/>
                                             <real value="3.4028234663852886e+38"/>
                                             <real value="3.4028234663852886e+38"/>
@@ -2089,6 +2096,9 @@
                             <constraint firstItem="719-lE-FL8" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="e7v-4Z-TNI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stackExtra" destination="Vsy-xz-0iI" id="hMj-rj-9KH"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

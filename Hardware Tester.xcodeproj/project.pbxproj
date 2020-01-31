@@ -12,6 +12,7 @@
 		114F368523E044A400F7DF20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114F368423E044A400F7DF20 /* Assets.xcassets */; };
 		114F368823E044A400F7DF20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114F368623E044A400F7DF20 /* Main.storyboard */; };
 		114F369123E0E54400F7DF20 /* KeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114F369023E0E54400F7DF20 /* KeyView.swift */; };
+		114F369323E4A8B200F7DF20 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114F369223E4A8B200F7DF20 /* Key.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		114F368923E044A400F7DF20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		114F368A23E044A400F7DF20 /* Hardware_Tester.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hardware_Tester.entitlements; sourceTree = "<group>"; };
 		114F369023E0E54400F7DF20 /* KeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyView.swift; sourceTree = "<group>"; };
+		114F369223E4A8B200F7DF20 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				114F368023E044A200F7DF20 /* AppDelegate.swift */,
 				114F368223E044A200F7DF20 /* ViewController.swift */,
 				114F369023E0E54400F7DF20 /* KeyView.swift */,
+				114F369223E4A8B200F7DF20 /* Key.swift */,
 				114F368423E044A400F7DF20 /* Assets.xcassets */,
 				114F368623E044A400F7DF20 /* Main.storyboard */,
 				114F368923E044A400F7DF20 /* Info.plist */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				114F368323E044A200F7DF20 /* ViewController.swift in Sources */,
+				114F369323E4A8B200F7DF20 /* Key.swift in Sources */,
 				114F368123E044A200F7DF20 /* AppDelegate.swift in Sources */,
 				114F369123E0E54400F7DF20 /* KeyView.swift in Sources */,
 			);
