@@ -64,7 +64,7 @@ class KeyView: NSView {
 		textLabel.isBezeled = false
 		textLabel.drawsBackground = false
 		textLabel.alignment = .center
-		textLabel.textColor = NSColor.white
+		textLabel.textColor = NSColor.white.withAlphaComponent(0.75)
 		self.addSubview(textLabel)
 
 		textLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -78,9 +78,9 @@ class KeyView: NSView {
 	}
 
 	override func layout() {
-		let fontSizeFactor: CGFloat = (keyLabel?.count ?? 0 > 1) ? 0.25 : 0.4
+		let fontSizeFactor: CGFloat = (keyLabel?.count ?? 0 > 1) ? 0.25 : 0.35
 		let fontSize = max(self.frame.height * fontSizeFactor, 12)
-		textLabel.font = NSFont.systemFont(ofSize: fontSize, weight: .thin)
+		textLabel.font = NSFont.systemFont(ofSize: fontSize, weight: .light)
 		let labelSize = textLabel.sizeThatFits(.zero)
 
 		if let constraint = textLabelWidthConstraint {
