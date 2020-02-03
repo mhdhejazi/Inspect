@@ -9,13 +9,21 @@
 import Cocoa
 import Carbon
 
-class ViewController: NSViewController {
+class KeyboardController: NSViewController {
 	@IBOutlet var stackExtra: NSStackView!
+
+	private var eventMonitor: Any?
+
+	deinit {
+		if let monitor = eventMonitor {
+			NSEvent.removeMonitor(monitor)
+		}
+	}
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		NSEvent.addLocalMonitorForEvents(matching: [.keyDown, .keyUp, .flagsChanged]) { event in
+		eventMonitor = NSEvent.addLocalMonitorForEvents(matching: [.keyDown, .keyUp, .flagsChanged]) { [unowned self] event in
             self.onKeyDown(with: event)
             return event
         }

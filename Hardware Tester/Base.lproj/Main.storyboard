@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="XAV-XV-naf">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
@@ -682,10 +682,93 @@
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
         <!--Window Controller-->
+        <scene sceneID="b7i-6J-C6u">
+            <objects>
+                <windowController id="XAV-XV-naf" sceneMemberID="viewController">
+                    <window key="window" title="Hardware Tester" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="darkAqua" frameAutosaveName="" animationBehavior="default" id="MkL-Oh-uJy">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+                        <rect key="contentRect" x="1734" y="429" width="520" height="280"/>
+                        <rect key="screenRect" x="1440" y="67" width="1920" height="1177"/>
+                        <value key="minSize" type="size" width="520" height="280"/>
+                        <value key="maxSize" type="size" width="520" height="280"/>
+                        <connections>
+                            <outlet property="delegate" destination="XAV-XV-naf" id="UCP-Vk-12B"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="w1j-CN-3pF" kind="relationship" relationship="window.shadowedContentViewController" id="hUH-ev-uGd"/>
+                    </connections>
+                </windowController>
+                <customObject id="sf0-8n-cbZ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-593" y="-219"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ahr-Uw-2dg">
+            <objects>
+                <viewController id="w1j-CN-3pF" sceneMemberID="viewController">
+                    <view key="view" id="IA4-dX-sW0">
+                        <rect key="frame" x="0.0" y="0.0" width="520" height="280"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="88" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Av6-6b-0ZO">
+                                <rect key="frame" x="101" y="73" width="318" height="135"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="50V-if-8dP">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="135"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="50V-if-8dP" secondAttribute="height" multiplier="0.85" id="c8w-nx-7rH"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="bevel" title="Keyboard Test" bezelStyle="rounded" image="Keyboard" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="omO-tr-6Cb">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <segue destination="B8D-0N-5wS" kind="modal" id="F7I-Bk-WNQ"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2sq-7w-V5t">
+                                        <rect key="frame" x="203" y="0.0" width="115" height="135"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2sq-7w-V5t" secondAttribute="height" multiplier="0.85" id="7e7-FD-YZG"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="bevel" title="Dead Pixel Test" bezelStyle="rounded" image="Display" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="lue-y4-vjy">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <segue destination="fJX-BG-SC7" kind="show" id="mct-Le-cjh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="ME7-NE-9V3"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Av6-6b-0ZO" firstAttribute="centerY" secondItem="IA4-dX-sW0" secondAttribute="centerY" id="3lC-IJ-Vcr"/>
+                            <constraint firstItem="Av6-6b-0ZO" firstAttribute="centerX" secondItem="IA4-dX-sW0" secondAttribute="centerX" id="e6f-7X-mfR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="tei-RN-U7C" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-593" y="245"/>
+        </scene>
+        <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="darkAqua" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Keyboard Test" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="darkAqua" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -702,10 +785,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--Keyboard Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Hardware_Tester" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="KeyboardController" customModule="Hardware_Tester" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="1040" height="426"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2102,7 +2185,45 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="906"/>
+            <point key="canvasLocation" x="75" y="793"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="C8U-8v-DPx">
+            <objects>
+                <windowController showSeguePresentationStyle="single" id="fJX-BG-SC7" sceneMemberID="viewController">
+                    <window key="window" title="Dead Pixel Test" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="SgA-8b-XbO">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="1734" y="429" width="480" height="270"/>
+                        <rect key="screenRect" x="1440" y="67" width="1920" height="1177"/>
+                        <connections>
+                            <outlet property="delegate" destination="fJX-BG-SC7" id="j2U-yH-CiD"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="69s-EJ-0Iz" kind="relationship" relationship="window.shadowedContentViewController" id="aOW-I1-hT4"/>
+                    </connections>
+                </windowController>
+                <customObject id="EcA-tk-RAx" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1265" y="250"/>
+        </scene>
+        <!--Screen Tester-->
+        <scene sceneID="ecW-qF-Mjg">
+            <objects>
+                <viewController title="Screen Tester" id="69s-EJ-0Iz" customClass="ScreenController" customModule="Hardware_Tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="wiI-jf-ClA">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="mpM-C4-ITA" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1265" y="715"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Display" width="128" height="128"/>
+        <image name="Keyboard" width="128" height="128"/>
+    </resources>
 </document>
