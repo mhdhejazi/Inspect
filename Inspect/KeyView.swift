@@ -10,10 +10,26 @@ import Cocoa
 
 @IBDesignable
 class KeyView: NSView {
-	private static let defaultColor = NSColor.darkGray
-	private static let pressedColor = NSColor(deviceRed: 0.15, green: 0.70, blue: 0.40, alpha: 1)
-	private static let clickedColor1 = NSColor(deviceRed: 0.25, green: 0.50, blue: 0.80, alpha: 1)
-	private static let clickedColor2 = NSColor(deviceRed: 0.15, green: 0.35, blue: 0.65, alpha: 1)
+	private static let defaultColor = DynamicColor(
+		lightModeColor: NSColor(deviceWhite: 0.82, alpha: 1),
+		darkModeColor: NSColor(deviceWhite: 0.33, alpha: 1)
+	)
+	private static let pressedColor = DynamicColor(
+		lightModeColor: NSColor(deviceHue: 0.4, saturation: 0.55, brightness: 0.88, alpha: 1),
+		darkModeColor: NSColor(deviceHue: 0.4, saturation: 0.78, brightness: 0.7, alpha: 1)
+	)
+	private static let clickedColor1 = DynamicColor(
+		lightModeColor: NSColor(deviceHue: 0.59, saturation: 0.4, brightness: 0.95, alpha: 1),
+		darkModeColor: NSColor(deviceHue: 0.59, saturation: 0.68, brightness: 0.8, alpha: 1)
+	)
+	private static let clickedColor2 = DynamicColor(
+		lightModeColor: NSColor(deviceHue: 0.6, saturation: 0.45, brightness: 0.9, alpha: 1),
+		darkModeColor: NSColor(deviceHue: 0.6, saturation: 0.77, brightness: 0.65, alpha: 1)
+	)
+	private static let textColor = DynamicColor(
+		lightModeColor: NSColor(deviceWhite: 0, alpha: 0.75),
+		darkModeColor: NSColor(deviceWhite: 1, alpha: 0.75)
+	)
 
 	private var textLabel: NSTextField!
 	private var textLabelWidthConstraint: NSLayoutConstraint?
@@ -21,7 +37,7 @@ class KeyView: NSView {
 
 	@IBInspectable var keyLabel: String? {
 		didSet {
-			textLabel.stringValue = keyLabel ?? "?"
+			textLabel.stringValue = keyLabel ?? "<?>"
 		}
 	}
 	@IBInspectable var keyCode: Int = -1
@@ -36,9 +52,9 @@ class KeyView: NSView {
 		}
 	}
 	var keyColor: NSColor {
-		if pressed { return Self.pressedColor }
-		if clicked { return key.isModifier ? Self.clickedColor2 : Self.clickedColor1 }
-		return Self.defaultColor
+		if pressed { return Self.pressedColor.color }
+		if clicked { return key.isModifier ? Self.clickedColor2.color : Self.clickedColor1.color }
+		return Self.defaultColor.color
 	}
 
 	required init?(coder: NSCoder) {
@@ -55,7 +71,7 @@ class KeyView: NSView {
 
 	private func initializeView() {
 		self.wantsLayer = true
-		self.layer?.backgroundColor = Self.defaultColor.cgColor
+		self.layer?.backgroundColor = Self.defaultColor.color.cgColor
 		self.layer?.cornerRadius = 5
 
 		textLabel = NSTextField()
@@ -63,7 +79,6 @@ class KeyView: NSView {
 		textLabel.isBezeled = false
 		textLabel.drawsBackground = false
 		textLabel.alignment = .center
-		textLabel.textColor = NSColor.white.withAlphaComponent(0.75)
 		self.addSubview(textLabel)
 
 		textLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -101,5 +116,6 @@ class KeyView: NSView {
 
 	private func updateView() {
 		self.layer?.backgroundColor = keyColor.cgColor
+		textLabel.textColor = Self.textColor.color
 	}
 }

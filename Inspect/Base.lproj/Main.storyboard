@@ -685,7 +685,7 @@
         <scene sceneID="b7i-6J-C6u">
             <objects>
                 <windowController showSeguePresentationStyle="single" id="XAV-XV-naf" sceneMemberID="viewController">
-                    <window key="window" title="Inspect" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="darkAqua" frameAutosaveName="" animationBehavior="default" id="MkL-Oh-uJy">
+                    <window key="window" title="Inspect" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="MkL-Oh-uJy">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <rect key="contentRect" x="1734" y="429" width="520" height="280"/>
                         <rect key="screenRect" x="1440" y="67" width="1920" height="1177"/>
@@ -712,29 +712,29 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="88" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Av6-6b-0ZO">
-                                <rect key="frame" x="101" y="73" width="318" height="135"/>
+                                <rect key="frame" x="104" y="70" width="312" height="140"/>
                                 <subviews>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="50V-if-8dP">
-                                        <rect key="frame" x="0.0" y="0.0" width="115" height="135"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="112" height="140"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="50V-if-8dP" secondAttribute="height" multiplier="0.85" id="c8w-nx-7rH"/>
+                                            <constraint firstAttribute="width" secondItem="50V-if-8dP" secondAttribute="height" multiplier="0.8" id="c8w-nx-7rH"/>
                                         </constraints>
                                         <buttonCell key="cell" type="bevel" title="Keyboard Test" bezelStyle="rounded" image="Keyboard" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="omO-tr-6Cb">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
+                                            <font key="font" metaFont="systemSemibold" size="14"/>
                                         </buttonCell>
                                         <connections>
                                             <segue destination="B8D-0N-5wS" kind="modal" id="F7I-Bk-WNQ"/>
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2sq-7w-V5t">
-                                        <rect key="frame" x="203" y="0.0" width="115" height="135"/>
+                                        <rect key="frame" x="200" y="0.0" width="112" height="140"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="2sq-7w-V5t" secondAttribute="height" multiplier="0.85" id="7e7-FD-YZG"/>
+                                            <constraint firstAttribute="width" secondItem="2sq-7w-V5t" secondAttribute="height" multiplier="0.8" id="7e7-FD-YZG"/>
                                         </constraints>
                                         <buttonCell key="cell" type="bevel" title="Dead Pixel Test" bezelStyle="rounded" image="Display" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="lue-y4-vjy">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
+                                            <font key="font" metaFont="systemSemibold" size="14"/>
                                         </buttonCell>
                                         <connections>
                                             <segue destination="fJX-BG-SC7" kind="show" id="mct-Le-cjh"/>
@@ -742,7 +742,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="135" id="ME7-NE-9V3"/>
+                                    <constraint firstAttribute="height" constant="140" id="ME7-NE-9V3"/>
                                 </constraints>
                                 <visibilityPriorities>
                                     <integer value="1000"/>
@@ -768,7 +768,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Keyboard Test" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="darkAqua" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Keyboard Test" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
