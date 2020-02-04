@@ -12,11 +12,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="Hardware Tester" id="1Xt-HY-uBw">
+                            <menuItem title="Inspect" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Hardware Tester" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="Inspect" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About Hardware Tester" id="5kV-Vb-QxS">
+                                        <menuItem title="About Inspect" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -30,7 +30,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide Hardware Tester" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide Inspect" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -48,7 +48,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit Hardware Tester" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit Inspect" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -661,7 +661,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="Hardware Tester Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="Inspect Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -675,7 +675,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Hardware_Tester" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Inspect" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -684,8 +684,8 @@
         <!--Window Controller-->
         <scene sceneID="b7i-6J-C6u">
             <objects>
-                <windowController id="XAV-XV-naf" sceneMemberID="viewController">
-                    <window key="window" title="Hardware Tester" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="darkAqua" frameAutosaveName="" animationBehavior="default" id="MkL-Oh-uJy">
+                <windowController showSeguePresentationStyle="single" id="XAV-XV-naf" sceneMemberID="viewController">
+                    <window key="window" title="Inspect" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="darkAqua" frameAutosaveName="" animationBehavior="default" id="MkL-Oh-uJy">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <rect key="contentRect" x="1734" y="429" width="520" height="280"/>
                         <rect key="screenRect" x="1440" y="67" width="1920" height="1177"/>
@@ -788,7 +788,7 @@
         <!--Keyboard Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="KeyboardController" customModule="Hardware_Tester" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="KeyboardController" customModule="Inspect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="1040" height="426"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -802,7 +802,7 @@
                                             <stackView distribution="fillEqually" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="0m2-tE-IR7">
                                                 <rect key="frame" x="0.0" y="346" width="1000" height="40"/>
                                                 <subviews>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="orm-8Q-nVn" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="orm-8Q-nVn" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="64" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="orm-8Q-nVn" secondAttribute="height" multiplier="1.6" id="CRp-xL-2fj"/>
@@ -815,7 +815,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="saw-kW-r22" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="saw-kW-r22" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="72" y="0.0" width="64" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="saw-kW-r22" secondAttribute="height" multiplier="1.6" id="axH-E4-Cmh"/>
@@ -828,7 +828,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="seO-OP-J5o" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="seO-OP-J5o" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="144" y="0.0" width="64" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="seO-OP-J5o" secondAttribute="height" multiplier="1.6" id="7S1-il-Kab"/>
@@ -841,7 +841,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="2Rc-Kn-txB" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="2Rc-Kn-txB" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="216" y="0.0" width="64" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="2Rc-Kn-txB" secondAttribute="height" multiplier="1.6" id="9dR-Mw-wd3"/>
@@ -854,7 +854,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="p5S-2p-JaB" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="p5S-2p-JaB" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="288" y="0.0" width="64" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="M3W-Ne-Wdd"/>
@@ -867,7 +867,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="g35-kg-M8p" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="g35-kg-M8p" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="360" y="0.0" width="64" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="g35-kg-M8p" secondAttribute="height" multiplier="1.6" id="IF8-UD-YTM"/>
@@ -880,7 +880,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="aqb-Ae-lcW" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="aqb-Ae-lcW" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="432" y="0.0" width="64" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="aqb-Ae-lcW" secondAttribute="height" multiplier="1.6" id="iDw-9H-uDy"/>
@@ -893,7 +893,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="11i-jE-60q" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="11i-jE-60q" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="504" y="0.0" width="64" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="11i-jE-60q" secondAttribute="height" multiplier="1.6" id="Iz5-Tx-Xq8"/>
@@ -906,7 +906,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="UcE-pS-uVW" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="UcE-pS-uVW" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="576" y="0.0" width="64" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="N4Z-Wk-dpf"/>
@@ -919,7 +919,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="8cH-0W-1br" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="8cH-0W-1br" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="648" y="0.0" width="64" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="8cH-0W-1br" secondAttribute="height" multiplier="1.6" id="PYq-oe-q1z"/>
@@ -932,7 +932,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="fib-Mf-OVo" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="fib-Mf-OVo" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="720" y="0.0" width="64" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="fib-Mf-OVo" secondAttribute="height" multiplier="1.6" id="LYz-1x-LkC"/>
@@ -945,7 +945,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="tLf-re-iZN" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="tLf-re-iZN" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="792" y="0.0" width="64" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="tLf-re-iZN" secondAttribute="height" multiplier="1.6" id="Fks-UE-hrQ"/>
@@ -958,7 +958,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="YKm-mK-cuK" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="YKm-mK-cuK" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="864" y="0.0" width="64" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="RWN-Mz-FUA"/>
@@ -971,7 +971,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="eXw-XI-YRN" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="eXw-XI-YRN" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="936" y="0.0" width="64" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="eXw-XI-YRN" secondAttribute="height" multiplier="1.6" id="cOG-I2-Xcg"/>
@@ -1034,7 +1034,7 @@
                                             <stackView distribution="fillEqually" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="c5z-b5-sMp">
                                                 <rect key="frame" x="0.0" y="276" width="1000" height="62"/>
                                                 <subviews>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Vq9-qu-ivj" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Vq9-qu-ivj" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Vq9-qu-ivj" secondAttribute="height" multiplier="1:1" id="MkL-2k-Mfu"/>
@@ -1047,7 +1047,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="5Li-3p-uuE" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="5Li-3p-uuE" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="70" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="5Li-3p-uuE" secondAttribute="height" multiplier="1:1" id="Ipy-rI-FCm"/>
@@ -1060,7 +1060,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="sgp-06-ahv" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="sgp-06-ahv" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="140" y="0.0" width="61" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="sgp-06-ahv" secondAttribute="height" multiplier="1:1" id="L9n-Na-vbM"/>
@@ -1073,7 +1073,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="1rY-EB-B3v" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="1rY-EB-B3v" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="209" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="1rY-EB-B3v" secondAttribute="height" multiplier="1:1" id="6dA-sX-NYv"/>
@@ -1086,7 +1086,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="2pE-pC-VHM" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="2pE-pC-VHM" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="279" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="gRg-Ac-AK4"/>
@@ -1099,7 +1099,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="rua-Ny-AAP" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="rua-Ny-AAP" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="349" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="rua-Ny-AAP" secondAttribute="height" multiplier="1:1" id="GNH-7O-f3M"/>
@@ -1112,7 +1112,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="xiL-bd-6zm" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="xiL-bd-6zm" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="419" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="xiL-bd-6zm" secondAttribute="height" multiplier="1:1" id="N8s-hu-5OW"/>
@@ -1125,7 +1125,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="4nv-pc-oqD" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="4nv-pc-oqD" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="489" y="0.0" width="61" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="DOY-sf-mSh"/>
@@ -1138,7 +1138,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="SZU-AL-tes" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="SZU-AL-tes" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="558" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="7Hj-VY-9h4"/>
@@ -1151,7 +1151,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="qSL-eQ-g5D" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="qSL-eQ-g5D" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="628" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="5tq-2u-1tM"/>
@@ -1164,7 +1164,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="69V-2y-Y4H" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="69V-2y-Y4H" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="698" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="69V-2y-Y4H" secondAttribute="height" multiplier="1:1" id="MUi-3E-qC1"/>
@@ -1177,7 +1177,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="HDG-rI-ema" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="HDG-rI-ema" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="768" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="HDG-rI-ema" secondAttribute="height" multiplier="1:1" id="c8A-7s-oyl"/>
@@ -1190,7 +1190,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="xtF-QH-aiX" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="xtF-QH-aiX" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="838" y="0.0" width="61" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="xtF-QH-aiX" secondAttribute="height" multiplier="1:1" id="6cl-vD-Ogc"/>
@@ -1203,7 +1203,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="7Ya-QR-VDK" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="7Ya-QR-VDK" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="907" y="0.0" width="93" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="KEf-Qb-gWR"/>
@@ -1269,7 +1269,7 @@
                                             <stackView distribution="fillEqually" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="rIZ-p6-OAL">
                                                 <rect key="frame" x="0.0" y="206" width="1000" height="62"/>
                                                 <subviews>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="ge6-2j-hKz" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="ge6-2j-hKz" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="93" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="FXH-Pq-3BP"/>
@@ -1282,7 +1282,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="8h1-2d-Gwu" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="8h1-2d-Gwu" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="101" y="0.0" width="61" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="8h1-2d-Gwu" secondAttribute="height" multiplier="1:1" id="fGP-sl-FZ0"/>
@@ -1295,7 +1295,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="4dg-KM-4MJ" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="4dg-KM-4MJ" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="170" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="4dg-KM-4MJ" secondAttribute="height" multiplier="1:1" id="lmf-wK-TRI"/>
@@ -1308,7 +1308,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="8da-9Y-0CR" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="8da-9Y-0CR" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="240" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="GHq-eg-dJD"/>
@@ -1321,7 +1321,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="usj-wl-RNb" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="usj-wl-RNb" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="310" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="usj-wl-RNb" secondAttribute="height" multiplier="1:1" id="0w3-on-zEp"/>
@@ -1334,7 +1334,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="zKC-8r-VB1" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="zKC-8r-VB1" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="380" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="Z3N-lJ-rem"/>
@@ -1347,7 +1347,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="oTR-HY-GHm" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="oTR-HY-GHm" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="450" y="0.0" width="61" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="MS9-9p-keF"/>
@@ -1360,7 +1360,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="PDY-UE-acm" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="PDY-UE-acm" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="519" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="PDY-UE-acm" secondAttribute="height" multiplier="1:1" id="W6o-SE-NeN"/>
@@ -1373,7 +1373,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="RYf-Kr-ujb" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="RYf-Kr-ujb" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="589" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="3GX-H1-Qnm"/>
@@ -1386,7 +1386,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="RtT-cE-xGP" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="RtT-cE-xGP" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="659" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="Wj6-U4-6JH"/>
@@ -1399,7 +1399,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="ZE1-Uf-qCv" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="ZE1-Uf-qCv" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="729" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="ZE1-Uf-qCv" secondAttribute="height" multiplier="1:1" id="NX5-81-qia"/>
@@ -1412,7 +1412,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="BH6-FQ-e4v" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="BH6-FQ-e4v" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="799" y="0.0" width="61" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="7Lw-R0-Uam"/>
@@ -1425,7 +1425,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Nnm-1L-2lw" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Nnm-1L-2lw" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="868" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Nnm-1L-2lw" secondAttribute="height" multiplier="1:1" id="4e9-jT-VXk"/>
@@ -1438,7 +1438,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Xi4-lq-z16" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Xi4-lq-z16" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="938" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="RUR-uL-uuv"/>
@@ -1504,7 +1504,7 @@
                                             <stackView distribution="fillEqually" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="7MS-N5-3LD">
                                                 <rect key="frame" x="0.0" y="137" width="1000" height="61"/>
                                                 <subviews>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Zxh-RM-pk0" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Zxh-RM-pk0" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Zxh-RM-pk0" secondAttribute="height" multiplier="1.9" id="Dg3-ZN-qWd"/>
@@ -1517,7 +1517,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Ms9-ln-2X8" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Ms9-ln-2X8" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="124" y="0.0" width="61" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Ms9-ln-2X8" secondAttribute="height" multiplier="1:1" id="B8k-mT-QR2"/>
@@ -1530,7 +1530,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="U15-hc-IgJ" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="U15-hc-IgJ" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="193" y="0.0" width="61" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="2vG-My-Fy3"/>
@@ -1543,7 +1543,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="G1i-zQ-aY9" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="G1i-zQ-aY9" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="262" y="0.0" width="61" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="G1i-zQ-aY9" secondAttribute="height" multiplier="1:1" id="4CQ-Bl-Qcf"/>
@@ -1556,7 +1556,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="XqR-vy-l2t" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="XqR-vy-l2t" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="331" y="0.0" width="61" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="D9v-FR-XBY"/>
@@ -1569,7 +1569,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="dHm-Fp-Xnf" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="dHm-Fp-Xnf" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="400" y="0.0" width="61" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="dHm-Fp-Xnf" secondAttribute="height" multiplier="1:1" id="1Pc-y5-SXf"/>
@@ -1582,7 +1582,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="8fy-Zj-6of" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="8fy-Zj-6of" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="469" y="0.0" width="62" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="hh0-EZ-Jtg"/>
@@ -1595,7 +1595,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="0T2-8K-GvK" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="0T2-8K-GvK" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="539" y="0.0" width="61" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="0T2-8K-GvK" secondAttribute="height" multiplier="1:1" id="sVd-ov-sj8"/>
@@ -1608,7 +1608,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="7Zq-7R-6Q0" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="7Zq-7R-6Q0" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="608" y="0.0" width="61" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="aNc-FO-XI3"/>
@@ -1621,7 +1621,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Mzv-dd-OIv" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Mzv-dd-OIv" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="677" y="0.0" width="61" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Mzv-dd-OIv" secondAttribute="height" multiplier="1:1" id="7Qs-oV-5KB"/>
@@ -1634,7 +1634,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="B6i-Qj-MuM" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="B6i-Qj-MuM" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="746" y="0.0" width="61" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="05S-Dd-BLW"/>
@@ -1647,7 +1647,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Q9B-BH-7vd" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Q9B-BH-7vd" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="815" y="0.0" width="61" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Q9B-BH-7vd" secondAttribute="height" multiplier="1:1" id="dCh-8l-ade"/>
@@ -1660,7 +1660,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="D8W-LH-R3R" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="D8W-LH-R3R" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="884" y="0.0" width="116" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="D8W-LH-R3R" secondAttribute="height" multiplier="1.9" id="Uya-wf-bZF"/>
@@ -1724,7 +1724,7 @@
                                             <stackView distribution="fillEqually" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="6QE-3I-tqX">
                                                 <rect key="frame" x="0.0" y="67" width="1000" height="62"/>
                                                 <subviews>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="3Va-fr-ora" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="3Va-fr-ora" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="148" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="0B4-xs-4PH"/>
@@ -1737,7 +1737,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="kfk-Rf-7Ai" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="kfk-Rf-7Ai" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="156" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="mG1-FG-sVW"/>
@@ -1750,7 +1750,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="6d7-r2-9SD" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="6d7-r2-9SD" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="226" y="0.0" width="61" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="6d7-r2-9SD" secondAttribute="height" multiplier="1:1" id="QEF-NT-3Ws"/>
@@ -1763,7 +1763,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="WBM-GI-YTn" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="WBM-GI-YTn" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="295" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="WBM-GI-YTn" secondAttribute="height" multiplier="1:1" id="14h-aX-AUk"/>
@@ -1776,7 +1776,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="EOA-ge-C3v" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="EOA-ge-C3v" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="365" y="0.0" width="61" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="EOA-ge-C3v" secondAttribute="height" multiplier="1:1" id="Zug-ff-P9k"/>
@@ -1789,7 +1789,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Sej-Dc-5EG" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Sej-Dc-5EG" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="434" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Sej-Dc-5EG" secondAttribute="height" multiplier="1:1" id="i6L-Qx-AMD"/>
@@ -1802,7 +1802,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="JbU-Uc-1vu" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="JbU-Uc-1vu" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="504" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="JbU-Uc-1vu" secondAttribute="height" multiplier="1:1" id="CWs-gg-XfA"/>
@@ -1815,7 +1815,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="dC1-Cd-z0b" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="dC1-Cd-z0b" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="574" y="0.0" width="61" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="DFf-bS-9gN"/>
@@ -1828,7 +1828,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="bZl-Wc-fta" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="bZl-Wc-fta" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="643" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="bZl-Wc-fta" secondAttribute="height" multiplier="1:1" id="2fv-YT-WL8"/>
@@ -1841,7 +1841,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="zCc-vg-Urs" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="zCc-vg-Urs" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="713" y="0.0" width="61" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="zCc-vg-Urs" secondAttribute="height" multiplier="1:1" id="2mg-sN-yeL"/>
@@ -1854,7 +1854,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="6cg-sa-ghB" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="6cg-sa-ghB" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="782" y="0.0" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="T3n-Pp-sJJ"/>
@@ -1867,7 +1867,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="3Er-tP-9fg" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="3Er-tP-9fg" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="852" y="0.0" width="148" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="3Er-tP-9fg" secondAttribute="height" multiplier="2.4" id="3Ja-uP-Cfy"/>
@@ -1928,7 +1928,7 @@
                                             <stackView distribution="fillEqually" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="bfe-rX-nz9">
                                                 <rect key="frame" x="0.0" y="0.0" width="1000" height="59"/>
                                                 <subviews>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="BKa-gc-0rI" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="BKa-gc-0rI" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="59" height="59"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="cwz-xs-n7B"/>
@@ -1941,7 +1941,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="PQF-ft-vAh" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="PQF-ft-vAh" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="67" y="0.0" width="60" height="59"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="qM4-t0-sF3"/>
@@ -1954,7 +1954,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="AP4-Lc-UBp" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="AP4-Lc-UBp" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="135" y="0.0" width="59" height="59"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="AP4-Lc-UBp" secondAttribute="height" multiplier="1:1" id="VjN-Bb-fER"/>
@@ -1967,7 +1967,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="mHm-Iq-TKq" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="mHm-Iq-TKq" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="202" y="0.0" width="84" height="59"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="BaH-WZ-PU3"/>
@@ -1980,7 +1980,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="g0V-Id-UaW" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="g0V-Id-UaW" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="294" y="0.0" width="345" height="59"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="g0V-Id-UaW" secondAttribute="height" multiplier="5.8" id="MAM-6p-bWu"/>
@@ -1992,7 +1992,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="WOL-js-CaU" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="WOL-js-CaU" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="647" y="0.0" width="83" height="59"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="WOL-js-CaU" secondAttribute="height" multiplier="1.4" id="1QK-yr-nHP"/>
@@ -2005,7 +2005,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="maM-ED-dy1" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="maM-ED-dy1" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="738" y="0.0" width="60" height="59"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="maM-ED-dy1" secondAttribute="height" multiplier="1:1" id="fq9-RG-kUq"/>
@@ -2018,7 +2018,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="PWO-5h-Se3" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="PWO-5h-Se3" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="806" y="0.0" width="59" height="59"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="Ecd-Rz-6mg"/>
@@ -2034,7 +2034,7 @@
                                                     <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="3" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t8A-c0-UJm">
                                                         <rect key="frame" x="873" y="0.0" width="60" height="59"/>
                                                         <subviews>
-                                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="uvc-pb-eGM" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="uvc-pb-eGM" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="31" width="60" height="28"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="9yo-1z-azB"/>
@@ -2047,7 +2047,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </customView>
-                                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="9BK-2H-sIn" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="9BK-2H-sIn" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="28"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="9BK-2H-sIn" secondAttribute="height" multiplier="2.1" id="128-yv-ItM"/>
@@ -2074,7 +2074,7 @@
                                                             <real value="3.4028234663852886e+38"/>
                                                         </customSpacing>
                                                     </stackView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="3JJ-7J-4bj" customClass="KeyView" customModule="Hardware_Tester" customModuleProvider="target">
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="3JJ-7J-4bj" customClass="KeyView" customModule="Inspect" customModuleProvider="target">
                                                         <rect key="frame" x="941" y="0.0" width="59" height="59"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="Hmh-pg-PtF"/>
@@ -2211,7 +2211,7 @@
         <!--Screen Tester-->
         <scene sceneID="ecW-qF-Mjg">
             <objects>
-                <viewController title="Screen Tester" id="69s-EJ-0Iz" customClass="ScreenController" customModule="Hardware_Tester" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Screen Tester" id="69s-EJ-0Iz" customClass="ScreenController" customModule="Inspect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="wiI-jf-ClA">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>

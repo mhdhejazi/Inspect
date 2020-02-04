@@ -17,12 +17,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		114F367D23E044A200F7DF20 /* Hardware Tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hardware Tester.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		114F367D23E044A200F7DF20 /* Inspect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inspect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		114F368023E044A200F7DF20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		114F368423E044A400F7DF20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		114F368723E044A400F7DF20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		114F368923E044A400F7DF20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		114F368A23E044A400F7DF20 /* Hardware_Tester.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hardware_Tester.entitlements; sourceTree = "<group>"; };
+		114F368A23E044A400F7DF20 /* Inspect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Inspect.entitlements; sourceTree = "<group>"; };
 		114F369023E0E54400F7DF20 /* KeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyView.swift; sourceTree = "<group>"; };
 		114F369223E4A8B200F7DF20 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		114F369623E5849C00F7DF20 /* KeyboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardController.swift; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		114F367423E044A200F7DF20 = {
 			isa = PBXGroup;
 			children = (
-				114F367F23E044A200F7DF20 /* Hardware Tester */,
+				114F367F23E044A200F7DF20 /* Inspect */,
 				114F367E23E044A200F7DF20 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,12 +51,12 @@
 		114F367E23E044A200F7DF20 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				114F367D23E044A200F7DF20 /* Hardware Tester.app */,
+				114F367D23E044A200F7DF20 /* Inspect.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		114F367F23E044A200F7DF20 /* Hardware Tester */ = {
+		114F367F23E044A200F7DF20 /* Inspect */ = {
 			isa = PBXGroup;
 			children = (
 				114F368023E044A200F7DF20 /* AppDelegate.swift */,
@@ -67,17 +67,17 @@
 				114F368423E044A400F7DF20 /* Assets.xcassets */,
 				114F368623E044A400F7DF20 /* Main.storyboard */,
 				114F368923E044A400F7DF20 /* Info.plist */,
-				114F368A23E044A400F7DF20 /* Hardware_Tester.entitlements */,
+				114F368A23E044A400F7DF20 /* Inspect.entitlements */,
 			);
-			path = "Hardware Tester";
+			path = Inspect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		114F367C23E044A200F7DF20 /* Hardware Tester */ = {
+		114F367C23E044A200F7DF20 /* Inspect */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 114F368D23E044A400F7DF20 /* Build configuration list for PBXNativeTarget "Hardware Tester" */;
+			buildConfigurationList = 114F368D23E044A400F7DF20 /* Build configuration list for PBXNativeTarget "Inspect" */;
 			buildPhases = (
 				114F367923E044A200F7DF20 /* Sources */,
 				114F367A23E044A200F7DF20 /* Frameworks */,
@@ -87,9 +87,9 @@
 			);
 			dependencies = (
 			);
-			name = "Hardware Tester";
+			name = Inspect;
 			productName = "Hardware Tester";
-			productReference = 114F367D23E044A200F7DF20 /* Hardware Tester.app */;
+			productReference = 114F367D23E044A200F7DF20 /* Inspect.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -107,7 +107,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 114F367823E044A200F7DF20 /* Build configuration list for PBXProject "Hardware Tester" */;
+			buildConfigurationList = 114F367823E044A200F7DF20 /* Build configuration list for PBXProject "Inspect" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				114F367C23E044A200F7DF20 /* Hardware Tester */,
+				114F367C23E044A200F7DF20 /* Inspect */,
 			);
 		};
 /* End PBXProject section */
@@ -281,15 +281,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Hardware Tester/Hardware_Tester.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Inspect/Inspect.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Hardware Tester/Info.plist";
+				INFOPLIST_FILE = Inspect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.samabox.hwtester;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samabox.inspect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -299,15 +300,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Hardware Tester/Hardware_Tester.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Inspect/Inspect.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Hardware Tester/Info.plist";
+				INFOPLIST_FILE = Inspect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.samabox.hwtester;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samabox.inspect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -316,7 +318,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		114F367823E044A200F7DF20 /* Build configuration list for PBXProject "Hardware Tester" */ = {
+		114F367823E044A200F7DF20 /* Build configuration list for PBXProject "Inspect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				114F368B23E044A400F7DF20 /* Debug */,
@@ -325,7 +327,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		114F368D23E044A400F7DF20 /* Build configuration list for PBXNativeTarget "Hardware Tester" */ = {
+		114F368D23E044A400F7DF20 /* Build configuration list for PBXNativeTarget "Inspect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				114F368E23E044A400F7DF20 /* Debug */,
