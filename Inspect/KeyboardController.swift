@@ -58,8 +58,13 @@ class KeyboardController: NSViewController {
 	}
 
 	private func addKeyView(for event: NSEvent) -> KeyView {
+		var keyName = Key(code: Int(event.keyCode)).name
+		if keyName == nil && event.type != .flagsChanged {
+			keyName = event.charactersIgnoringModifiers
+		}
+
 		let keyView = KeyView(frame: .zero)
-		keyView.keyLabel = Key(code: Int(event.keyCode)).name ?? event.charactersIgnoringModifiers
+		keyView.keyLabel = keyName
 		keyView.keyCode = Int(event.keyCode)
 		stackExtra.addView(keyView, in: .leading)
 		stackExtra.isHidden = false
