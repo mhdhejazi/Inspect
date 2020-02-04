@@ -8,9 +8,13 @@
 
 import Cocoa
 
+import FirebaseCore
+
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
+		UserDefaults.standard.register(defaults: ["NSApplicationCrashOnExceptions" : true])
+		FirebaseApp.configure()
 	}
 
 	func applicationWillTerminate(_ aNotification: Notification) {
