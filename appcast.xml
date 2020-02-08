@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Changelog</title>
+        <item>
+            <title>1.1</title>
+            <pubDate>Sat, 08 Feb 2020 00:00:00 GMT</pubDate>
+            <enclosure url="https://github.com/MhdHejazi/Inspect/releases/download/v1.1/Inspect.dmg" sparkle:version="1.1" length="8098197" type="application/octet-stream"/>
+        </item>
+    </channel>
+</rss>

@@ -26,11 +26,12 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - Sparkle (1.22.0)
 
 DEPENDENCIES:
   - Crashlytics
-  - Fabric
   - FirebaseCore
+  - Sparkle
 
 SPEC REPOS:
   trunk:
@@ -43,6 +44,7 @@ SPEC REPOS:
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
     - nanopb
+    - Sparkle
 
 SPEC CHECKSUMS:
   Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
@@ -54,7 +56,8 @@ SPEC CHECKSUMS:
   GoogleDataTransportCCTSupport: 202d7cdf9c4a7d81a2bb7f7e7e1ba6faa421b1f2
   GoogleUtilities: 29bd0d8f850efbd28cff6d99e8b7da1f8d236bcf
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  Sparkle: 593ac2e677c07bcb6c3b22d621240e7cbedaab57
 
-PODFILE CHECKSUM: 75990d1c4d8eb80e32910fe3d2c2294a52a29b52
+PODFILE CHECKSUM: e287ec67d43d4d8caaedec8877926b521866078b
 
 COCOAPODS: 1.8.4

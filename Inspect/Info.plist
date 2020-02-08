@@ -34,5 +34,9 @@
 	<true/>
 	<key>NSSupportsSuddenTermination</key>
 	<true/>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUFeedURL</key>
+	<string>https://raw.githubusercontent.com/MhdHejazi/Inspect/master/appcast.xml</string>
 </dict>
 </plist>

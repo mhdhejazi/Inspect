@@ -1,8 +1,9 @@
 platform :macos, '10.11'
 
 target 'Inspect' do
-  use_frameworks!
+	use_frameworks!
 
-  pod 'Crashlytics'
+	pod 'Crashlytics'
 	pod 'FirebaseCore'
+	pod 'Sparkle'
 end
